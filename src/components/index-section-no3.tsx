@@ -1,34 +1,19 @@
 import { Box, Container, Stack, Typography } from '@mui/material';
-import { FULLPAGE_SECTION_CLASS } from '../lib/constants';
-import AudiioSeal from '../assets/audio-seal.png';
 
 export function IndexSectionNo3() {
   return (
-    <Box className={FULLPAGE_SECTION_CLASS} bgcolor={'grey.800'}>
+    <Box height={'100vh'} pt={12}>
       <Container>
-        <Typography fontWeight={700} fontSize={'64px'} lineHeight={'normal'} color={'white'}>
-          <Typography color="grey.A400" component={'strong'} fontSize={'64px'} lineHeight={'normal'}>
-            Solution.
+        <Stack spacing={8}>
+          <Typography fontWeight={700} fontSize={'52px'} lineHeight={'normal'}>
+            믿을 수 있는 플랫폼.
+            <br />
+            AI VOID로부터
           </Typography>
-          <br />
-          딥보이스 피해 방지 기술
-          <br /> AI VOID
-        </Typography>
-        <Stack direction={'row'} spacing={8} mt={4}>
-          <Box overflow={'hidden'} borderRadius={'20px'} maxWidth={'600px'} width={'50%'} display={'flex'}>
-            <Box component={'img'} src={AudiioSeal} />
-          </Box>
-          <Stack spacing={2} width={'50%'}>
-            <Typography fontSize={'24px'} color={'white'}>
-              PatchCraft 기술을 통한 딥보이스 탐지 AI
-            </Typography>
-            <Typography fontSize={'24px'} color={'white'}>
-              워터마크 기술을 활용한 딥보이스 구분 기술
-            </Typography>
-            <Typography fontSize={'24px'} color={'white'}>
-              B2B/B2C 맞춤형 솔루션 제공
-            </Typography>
-          </Stack>
+          <Typography fontWeight={300} color={'grey.800'}>
+            AI VOID는 워터마크와 딥러닝 기술을 활용하여 인공지능이 생성한 음성과 실제 인간의 음성을 정확하게 구분하는 혁신적인 서비스입니다. 이를 통해 미디어 플랫폼은 이용자에게 해당 미디어 콘텐츠에 AI 음성이 사용되었는지 여부를 명확하게 표시할 수
+            있습니다. AI 음성 사용 수준을 필터링하는 기능을 제공함으로써, 미디어 업로더와 시청자 모두 안심할 수 있는 안전한 플랫폼을 구현할 수 있습니다.
+          </Typography>
         </Stack>
       </Container>
     </Box>

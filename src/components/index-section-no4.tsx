@@ -1,22 +1,19 @@
-import { Box, Button, Container, Stack, Typography } from '@mui/material';
-import { FULLPAGE_SECTION_CLASS } from '../lib/constants';
-import { Link } from '@tanstack/react-router';
+import { Box, Container, Stack, Typography } from '@mui/material';
 
 export function IndexSectionNo4() {
   return (
-    <Box className={FULLPAGE_SECTION_CLASS} bgcolor={'#0e2226'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+    <Box height={'100vh'} pt={12}>
       <Container>
-        <Stack spacing={6}>
-          <Typography color={'white'} fontSize={'62px'} fontWeight={700} textAlign={'center'} lineHeight={'normal'}>
-            당신의 목소리를
+        <Stack spacing={8}>
+          <Typography fontWeight={700} fontSize={'52px'} lineHeight={'normal'}>
+            범죄 예방의 파트너.
             <br />
-            안전하게 지켜드립니다.
+            안전한 통화 환경
           </Typography>
-          <Link to="/pricing">
-            <Button variant="contained" size="large" sx={{ borderRadius: '20px', fontSize: '24px', width: '100%' }} color="success">
-              요금제 보러가기
-            </Button>
-          </Link>
+          <Typography fontWeight={300} color={'grey.800'}>
+            AI VOID는 워터마크와 딥러닝 기술을 활용하여 인공지능이 생성한 음성과 실제 인간의 음성을 정확하게 구분하는 혁신적인 서비스입니다. 이를 통해 미디어 플랫폼은 이용자에게 해당 미디어 콘텐츠에 AI 음성이 사용되었는지 여부를 명확하게 표시할 수
+            있습니다. AI 음성 사용 수준을 필터링하는 기능을 제공함으로써, 미디어 업로더와 시청자 모두 안심할 수 있는 안전한 플랫폼을 구현할 수 있습니다.
+          </Typography>
         </Stack>
       </Container>
     </Box>
