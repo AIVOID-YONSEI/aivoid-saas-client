@@ -106,7 +106,7 @@ export function IndexSectionNo2() {
     .exhaustive();
 
   return (
-    <Box bgcolor={'#000000'} height={'100vh'} pt={12}>
+    <Box bgcolor={'#000000'} height={'100vh'} display={'flex'} alignItems={'center'}>
       <Container>
         <Typography fontWeight={700} fontSize={'52px'} lineHeight={'normal'} color="#a07bec">
           B2B.

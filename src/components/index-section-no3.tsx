@@ -2,7 +2,7 @@ import { Box, Container, Stack, Typography } from '@mui/material';
 
 export function IndexSectionNo3() {
   return (
-    <Box height={'100vh'} pt={12}>
+    <Box height={'100vh'} display={'flex'} alignItems={'center'}>
       <Container>
         <Stack spacing={8}>
           <Typography fontWeight={700} fontSize={'52px'} lineHeight={'normal'}>

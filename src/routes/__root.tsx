@@ -30,10 +30,6 @@ const globalStyle = css`
   button {
     cursor: pointer;
   }
-
-  .fp-watermark {
-    display: none;
-  }
 `;
 
 export const Route = createRootRoute({
