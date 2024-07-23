@@ -30,23 +30,25 @@ export function IndexSectionNo7() {
   ];
 
   return (
-    <Box height={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'#121212'} minWidth={'1000px'}>
-      <Container maxWidth="md">
-        <Typography fontWeight={700} fontSize={'56px'} color="white" textAlign={'center'}>
-          이 모든 것을 월 9,900원으로
-        </Typography>
-        <Typography fontSize={'20px'} color={'#808080'} textAlign={'center'} mt={2}>
-          합리적인 요금제로 안전하고 혁신적인
-          <br />
-          인터넷 환경을 경험하세요.
-        </Typography>
-        <Stack justifyContent={'center'} mt={3}>
-          <Button sx={{ color: 'white', fontSize: '20px' }}>
-            요금제 자세히 보기
-            <IoIosArrowForward />
-          </Button>
-        </Stack>
-        <Stack direction="row" spacing={4} justifyContent={'center'} mt={9}>
+    <Box height={'100vh'} display={'flex'} bgcolor={'#121212'} minWidth={'1000px'}>
+      <Container maxWidth="md" sx={{ display: 'flex', justifyContent: 'center', gap: 10, flexDirection: 'column', alignItems: 'stretch' }}>
+        <Box>
+          <Typography fontWeight={700} fontSize={'56px'} color="white" textAlign={'center'}>
+            이 모든 것을 월 9,900원으로
+          </Typography>
+          <Typography fontSize={'20px'} color={'#808080'} textAlign={'center'} mt={2}>
+            합리적인 요금제로 안전하고 혁신적인
+            <br />
+            인터넷 환경을 경험하세요.
+          </Typography>
+          <Stack justifyContent={'center'} mt={3}>
+            <Button sx={{ color: 'white', fontSize: '20px' }}>
+              요금제 자세히 보기
+              <IoIosArrowForward />
+            </Button>
+          </Stack>
+        </Box>
+        <Stack direction="row" spacing={4} justifyContent={'center'}>
           {plans.map((plan, index) => (
             <Box key={index} borderRadius={'20px'} p={'36px 30px'} bgcolor={plan.id === 'FREE' ? 'white' : plan.id === 'STANDARD' ? '#4c93ff' : '#a07bec'} width={'33.3%'} display={'flex'}>
               <Stack justifyContent={'space-between'} width={'100%'}>
