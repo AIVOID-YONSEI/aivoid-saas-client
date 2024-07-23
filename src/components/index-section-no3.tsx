@@ -15,7 +15,7 @@ export function IndexSectionNo3() {
               <br />
               AI VOID로부터
             </Typography>
-            <Typography sx={{ wordBreak: 'keep-all' }}>
+            <Typography sx={{ wordBreak: 'keep-all' }} fontSize={'20px'}>
               AI VOID는 워터마크와 딥러닝 기술을 활용하여,
               <br />
               인공지능이 생성한 음성과 실제 인간의 음성을 정확하게 구분하는 혁신적인 서비스입니다.

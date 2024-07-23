@@ -16,7 +16,7 @@ export function IndexSectionNo4() {
               <br />
               안전한 통화 환경
             </Typography>
-            <Typography sx={{ wordBreak: 'keep-all' }}>
+            <Typography sx={{ wordBreak: 'keep-all' }} fontSize={'20px'}>
               AI VOID는 통신사에게도 강력한 도구가 됩니다.
               <br />
               통신사는 AI VOID를 통해 보이스피싱과 같은 음성 관련 범죄를 효과적으로 예방할 수 있습니다.
