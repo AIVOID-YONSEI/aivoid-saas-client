@@ -20,7 +20,7 @@ export function IndexSectionNo3() {
               <br />
               인공지능이 생성한 음성과 실제 인간의 음성을 정확하게 구분하는 혁신적인 서비스입니다.
               <br />
-              <Typography component={'span'} color={'#4c93ff'} fontWeight={700}>
+              <Typography component={'span'} color={'#4c93ff'} fontWeight={700} fontSize={'inherit'}>
                 이를 통해 미디어 플랫폼은 이용자에게 해당 미디어 콘텐츠에 AI 음성이 사용되었는지 여부를 명확하게 표시할 수 있습니다.
               </Typography>
               <br />

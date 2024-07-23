@@ -21,7 +21,7 @@ export function IndexSectionNo4() {
               <br />
               통신사는 AI VOID를 통해 보이스피싱과 같은 음성 관련 범죄를 효과적으로 예방할 수 있습니다.
               <br />
-              <Typography component={'span'} color={'#69db7c'} fontWeight={700}>
+              <Typography component={'span'} color={'#69db7c'} fontWeight={700} fontSize={'inherit'}>
                 전화 수신자는 상대방의 음성에 대한 유효성 검사를 받아, 딥보이스 생성 여부를 판단할 수 있습니다.
               </Typography>
               <br />
