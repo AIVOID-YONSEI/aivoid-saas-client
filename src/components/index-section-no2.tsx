@@ -106,7 +106,7 @@ export function IndexSectionNo2() {
     .exhaustive();
 
   return (
-    <Box bgcolor={'#000000'} height={'100vh'} display={'flex'} alignItems={'center'}>
+    <Box bgcolor={'#121212'} height={'100vh'} display={'flex'} alignItems={'center'} minWidth={'1000px'}>
       <Container>
         <Typography fontWeight={700} fontSize={'52px'} lineHeight={'normal'} color="#a07bec">
           B2B.
@@ -120,7 +120,7 @@ export function IndexSectionNo2() {
               <Tab key={lang} value={lang} label={getLabel(lang)} sx={{ color: '#fff', textTransform: 'capitalize' }} />
             ))}
           </Tabs>
-          <Box sx={{ pre: { padding: '40px !important', fontSize: '16px', borderRadius: '20px' } }} position={'relative'}>
+          <Box sx={{ pre: { padding: '40px !important', fontSize: '16px', borderRadius: '20px', fontFamily: "'D2Coding', monospace" } }} position={'relative'}>
             <SyntaxHighlighter language={realLang} style={darcula}>
               {codes[currLang]}
             </SyntaxHighlighter>

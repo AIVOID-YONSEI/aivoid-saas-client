@@ -45,30 +45,37 @@ export function IndexSectionNo6() {
   ];
 
   return (
-    <Box height={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'#000'}>
+    <Box height={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'#000'} minWidth={'1000px'}>
       <Container>
         <Typography fontWeight={700} fontSize={'52px'} lineHeight={'normal'} color="#a07bec">
           B2C.
         </Typography>
         <Typography fontWeight={700} fontSize={'40px'} lineHeight={'normal'} color={'white'}>
-          익스텐션을 통한 편리한 인터넷 경험
+          익스텐션을 통한 안전한 인터넷 경험
         </Typography>
-        <Typography fontSize={'20px'} lineHeight={'normal'} color={'white'} mt={4} mb={8}>
-          AI VOID는 개인 사용자들을 위해 맞춤형 플랜을 제공하며, 크롬 익스텐션을 통해 인공지능이 생성한 음성 여부를 분석하여 브라우저에서 시각적으로 표시합니다.
+        <Typography fontSize={'20px'} color={'white'} mt={4} mb={8}>
+          AI VOID는 개인 사용자들을 위해 맞춤형 플랜을 제공하며,
           <br />
-          간편하게 설치하여 실시간으로 AI 음성 검출 결과를 제공하며, 사용자의 인터넷 경험을 안전하고 신뢰성 있게 만들어줍니다.
+          <Typography component={'span'} color={'#a07bec'} fontSize={'20px'} fontWeight={700}>
+            크롬 익스텐션
+          </Typography>
+          을 통해 인공지능이 생성한 음성 여부를 분석하여 브라우저에서 시각적으로 표시합니다.
+          <br />
+          간편하게 설치하여 실시간으로 AI 음성 검출 결과를 제공하며,
+          <br />
+          사용자의 인터넷 경험을 안전하고 신뢰성 있게 만들어줍니다.
           <br />
           AI VOID를 통해 웹에서의 모든 음성 콘텐츠에 대해 놀라운 경험을 해보세요.
         </Typography>
-        <Swiper modules={[Autoplay]} spaceBetween={50} slidesPerView={3} autoplay={{ delay: 2500 }} loop speed={1200}>
+        <Swiper modules={[Autoplay]} spaceBetween={50} slidesPerView={3} autoplay={{ delay: 500 }} loop speed={1000}>
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <Box bgcolor={'grey.A100'} p={3} borderRadius={2} height={'260px'} display={'flex'} flexDirection={'column'} justifyContent={'space-between'}>
+              <Box bgcolor={'grey.A100'} p={3} borderRadius={2} height={'240px'} display={'flex'} flexDirection={'column'} justifyContent={'space-between'}>
                 <Typography fontSize={'16px'} whiteSpace={'pre-line'}>
                   {slide.text}
                 </Typography>
-                <Stack direction={'row'} spacing={2} mt={3} alignItems={'center'}>
-                  <img src={slide.profileImage} alt="" width={50} height={50} style={{ borderRadius: '50%' }} />
+                <Stack direction={'row'} spacing={2} alignItems={'center'}>
+                  <img src={slide.profileImage} alt="profile" width={50} height={50} style={{ borderRadius: '50%' }} />
                   <Stack direction={'row'} spacing={1} alignItems={'center'}>
                     <Typography fontSize={'14px'} fontWeight={700}>
                       {slide.author}

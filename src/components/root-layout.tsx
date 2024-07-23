@@ -5,8 +5,8 @@ import Logo from '../assets/logo.png';
 
 export function RootLayout({ children }: PropsWithChildren) {
   return (
-    <Stack minHeight={'100vh'} flexDirection={'column'} alignItems={'stretch'}>
-      <AppBar position="fixed" color="default" sx={{ backdropFilter: 'blur(50px)', backgroundColor: 'rgba(0, 0, 0 , 0.3)', height: '64px' }} elevation={0}>
+    <Stack minHeight={'100vh'} flexDirection={'column'} alignItems={'stretch'} minWidth={'1000px'}>
+      <AppBar position="fixed" color="default" sx={{ backdropFilter: 'blur(50px)', backgroundColor: 'rgba(0, 0, 0 , 0.3)', height: '64px', width: '100%', minWidth: '1000px', left: 0 }} elevation={0}>
         <Toolbar sx={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Stack direction="row" alignItems={'center'} spacing={2}>
             <Link to={'/'}>

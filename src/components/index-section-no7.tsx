@@ -1,59 +1,94 @@
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
-import { FaCheck } from 'react-icons/fa';
+import { IoMdCheckmark } from 'react-icons/io';
+import { IoIosArrowForward } from 'react-icons/io';
 
 export function IndexSectionNo7() {
   const plans: {
+    id: 'FREE' | 'STANDARD' | 'PREMIUM';
     title: string;
     price: number;
     features: string[];
-    color: string;
   }[] = [
     {
+      id: 'FREE',
       title: 'FREE',
       price: 0,
       features: ['한달 이용 횟수 : 30회', '최대 음성 길이 : 1분', '광고 표시'],
-      color: '#616161',
     },
     {
+      id: 'STANDARD',
       title: 'STANDARD',
       price: 9900,
       features: ['한달 이용 횟수 : 100회', '최대 음성 길이 : 10분', '광고 없음', '더 빠른 반응속도'],
-      color: '#5900eb',
     },
     {
+      id: 'PREMIUM',
       title: 'PREMIUM',
       price: 99000,
       features: ['한달 이용 횟수 : 무제한', '최대 음성 길이 : 무제한', '광고 없음', '더 빠른 반응속도'],
-      color: '#5900eb',
     },
   ];
 
   return (
-    <Box height={'100vh'} display={'flex'} alignItems={'center'}>
-      <Container>
-        <Typography fontWeight={700} fontSize={'52px'} lineHeight={'normal'} color="#a07bec">
-          개인용 요금제 안내
+    <Box height={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'#121212'} minWidth={'1000px'}>
+      <Container maxWidth="md">
+        <Typography fontWeight={700} fontSize={'56px'} color="white" textAlign={'center'}>
+          이 모든 것을 월 9,900원으로
         </Typography>
-        <Stack direction="row" spacing={2} justifyContent={'center'} mt={3}>
+        <Typography fontSize={'20px'} color={'#808080'} textAlign={'center'} mt={2}>
+          합리적인 요금제로 안전하고 혁신적인
+          <br />
+          인터넷 환경을 경험하세요.
+        </Typography>
+        <Stack justifyContent={'center'} mt={3}>
+          <Button sx={{ color: 'white', fontSize: '20px' }}>
+            요금제 자세히 보기
+            <IoIosArrowForward />
+          </Button>
+        </Stack>
+        <Stack direction="row" spacing={4} justifyContent={'center'} mt={9}>
           {plans.map((plan, index) => (
-            <Box key={index} borderRadius={'16px'} boxShadow={'0 8px 16px rgba(53,72,76,.08)'} p={'32px 20px 40px'} bgcolor={'white'} width={'33.3%'} display={'flex'}>
+            <Box key={index} borderRadius={'20px'} p={'36px 30px'} bgcolor={plan.id === 'FREE' ? 'white' : plan.id === 'STANDARD' ? '#4c93ff' : '#a07bec'} width={'33.3%'} display={'flex'}>
               <Stack justifyContent={'space-between'} width={'100%'}>
-                <Typography fontWeight={700} fontSize={'36px'} textAlign={'center'} color={plan.color}>
+                <Typography fontWeight={700} fontSize={'24px'} color={plan.id === 'FREE' ? 'black' : 'white'}>
                   {plan.title}
                 </Typography>
-                <Typography fontSize={'16px'} textAlign={'center'} color={'gray'} fontWeight={'light'}>
-                  {plan.price.toLocaleString()}
-                  원/월
-                </Typography>
-                <Stack mt={2}>
+                <Stack alignItems={'flex-end'} direction={'row'} mt={3}>
+                  <Typography component={'strong'} fontWeight={700} fontSize={'34px'} color={plan.id === 'FREE' ? 'black' : 'white'} lineHeight={'normal'}>
+                    &#8361;{plan.price.toLocaleString()}
+                  </Typography>
+                  {plan.id !== 'FREE' && (
+                    <Typography fontSize={'14px'} fontWeight={700} color={'white'} lineHeight={'normal'} component={'span'} pb={0.5}>
+                      /월
+                    </Typography>
+                  )}
+                </Stack>
+                <Stack mt={3}>
                   {plan.features.map((feature, idx) => (
-                    <Stack direction={'row'} gap={1}>
-                      <FaCheck color="#30cf8d" />
-                      <Typography key={idx}>{feature}</Typography>
+                    <Stack direction={'row'} gap={1} key={idx}>
+                      <IoMdCheckmark color={plan.id === 'FREE' ? 'black' : 'white'} />
+                      <Typography key={idx} color={plan.id === 'FREE' ? 'black' : 'white'} fontSize={'14px'}>
+                        {feature}
+                      </Typography>
                     </Stack>
                   ))}
                 </Stack>
-                <Button variant="contained" sx={{ width: '100%', mt: 3, borderRadius: '20px', fontSize: '24px', bgcolor: plan.color, color: 'white', ':hover': { bgcolor: plan.color } }}>
+                <Button
+                  variant="contained"
+                  sx={{
+                    mt: 8,
+                    py: 1,
+                    borderRadius: '10px',
+                    boxShadow: 'none',
+                    fontSize: '14px',
+                    fontWeight: 700,
+                    bgcolor: plan.id === 'FREE' ? 'black' : 'white',
+                    color: plan.id === 'FREE' ? 'white' : plan.id === 'STANDARD' ? '#4c93ff' : '#a07bec',
+                    ':hover': {
+                      bgcolor: plan.id === 'FREE' ? 'black' : 'white',
+                    },
+                  }}
+                >
                   시작하기
                 </Button>
               </Stack>

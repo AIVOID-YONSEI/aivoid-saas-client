@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export function IndexSectionNo1() {
   return (
-    <Box bgcolor={'black'} display={'flex'} alignItems={'center'} height={'100vh'} position={'relative'}>
+    <Box bgcolor={'black'} display={'flex'} alignItems={'center'} height={'100vh'} position={'relative'} minWidth={'1000px'}>
       <Container sx={{ position: 'relative', zIndex: 1 }}>
         <Stack>
           <Typography color={'white'} fontSize={'24px'} lineHeight={'normal'} fontWeight={100} sx={{ opacity: 0.6 }}>
