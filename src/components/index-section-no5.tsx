@@ -11,7 +11,7 @@ export function IndexSectionNo5() {
                 Contact us.
               </Typography>
               <Typography fontSize={'24px'} mt={1}>
-                기업별 최적화된 AI VOID 서비스를 추천해드립니다.
+                기업별 최적화된 True Voice 서비스를 추천해드립니다.
               </Typography>
             </Box>
             <Box>

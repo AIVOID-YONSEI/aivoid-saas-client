@@ -13,7 +13,7 @@ export function RootLayout({ children }: PropsWithChildren) {
               <Stack direction={'row'} alignItems={'center'} spacing={2}>
                 <img src={Logo} alt="logo" width={40} />
                 <Typography color={'white'} fontSize={'20px'} fontWeight={700}>
-                  AI VOID
+                  True Voice
                 </Typography>
               </Stack>
             </Link>

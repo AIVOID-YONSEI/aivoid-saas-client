@@ -15,31 +15,31 @@ export function IndexSectionNo6() {
     {
       author: '박0영',
       authorInfo: '28세, 대학생',
-      text: 'AI VOID 덕분에 AI 음성을 구분할 수 있어 인터넷 사용이 훨씬 안전해​졌어요.\n브라우저에서 바로 확인할 수 있어서 편리하고, 중요한 정보를 ​안심하고 받아들일 수 있게 되었어요.',
+      text: 'True Voice 덕분에 AI 음성을 구분할 수 있어 인터넷 사용이 훨씬 안전해​졌어요.\n브라우저에서 바로 확인할 수 있어서 편리하고, 중요한 정보를 ​안심하고 받아들일 수 있게 되었어요.',
       profileImage: People1,
     },
     {
       author: '김0수',
       authorInfo: '34세, IT 엔지니어',
-      text: 'AI VOID 크롬 익스텐션은 정말 혁신적이에요.\n인터넷에서 많은 자료​를 찾는 저에게 있어, AI 음성을 실시간으로 판별해주니 자료의 신뢰도​를 높일 수 있어 매우 유용합니다.',
+      text: 'True Voice 크롬 익스텐션은 정말 혁신적이에요.\n인터넷에서 많은 자료​를 찾는 저에게 있어, AI 음성을 실시간으로 판별해주니 자료의 신뢰도​를 높일 수 있어 매우 유용합니다.',
       profileImage: People2,
     },
     {
       author: '한0민',
       authorInfo: '26세, 그래픽 디자이너',
-      text: 'AI VOID를 사용한 후로, 음성 콘텐츠를 더 신뢰할 수 있게 되었습니다.\n​특히, 다양한 정보를 접하는 제 직업 특성상, AI 음성을 구분해주는 기​능이 매우 유용해요.',
+      text: 'True Voice를 사용한 후로, 음성 콘텐츠를 더 신뢰할 수 있게 되었습니다.\n​특히, 다양한 정보를 접하는 제 직업 특성상, AI 음성을 구분해주는 기​능이 매우 유용해요.',
       profileImage: People3,
     },
     {
       author: '최0빈',
       authorInfo: '29세, 팟캐스트 진행자',
-      text: 'AI VOID 덕분에 팟캐스트 에피소드에서 AI 음성을 구분할 수 있어요.\n청취자들에게 더욱 신뢰할 수 있는 콘텐츠를 제공할 수 있게 되었습니다.',
+      text: 'True Voice 덕분에 팟캐스트 에피소드에서 AI 음성을 구분할 수 있어요.\n청취자들에게 더욱 신뢰할 수 있는 콘텐츠를 제공할 수 있게 되었습니다.',
       profileImage: People4,
     },
     {
       author: '윤0혁',
       authorInfo: '35세, 온라인 강사',
-      text: 'AI VOID는 온라인 강의에서 AI 음성을 구분하는 데 큰 도움이 됩니다.\n학생들에게 믿을 수 있는 정보를 전달할 수 있어 강의의 질을 높일 수 있어요.',
+      text: 'True Voice는 온라인 강의에서 AI 음성을 구분하는 데 큰 도움이 됩니다.\n학생들에게 믿을 수 있는 정보를 전달할 수 있어 강의의 질을 높일 수 있어요.',
       profileImage: People5,
     },
   ];
@@ -54,7 +54,7 @@ export function IndexSectionNo6() {
           익스텐션을 통한 안전한 인터넷 경험
         </Typography>
         <Typography fontSize={'20px'} color={'white'} mt={4} mb={8}>
-          AI VOID는 개인 사용자들을 위해 맞춤형 플랜을 제공하며,
+          True Voice는 개인 사용자들을 위해 맞춤형 플랜을 제공하며,
           <br />
           <Typography component={'span'} color={'#a07bec'} fontSize={'20px'} fontWeight={700}>
             크롬 익스텐션
@@ -65,7 +65,7 @@ export function IndexSectionNo6() {
           <br />
           사용자의 인터넷 경험을 안전하고 신뢰성 있게 만들어줍니다.
           <br />
-          AI VOID를 통해 웹에서의 모든 음성 콘텐츠에 대해 놀라운 경험을 해보세요.
+          True Voice를 통해 웹에서의 모든 음성 콘텐츠에 대해 놀라운 경험을 해보세요.
         </Typography>
         <Swiper modules={[Autoplay]} spaceBetween={50} slidesPerView={3} autoplay={{ delay: 500 }} loop speed={1000}>
           {slides.map((slide, index) => (

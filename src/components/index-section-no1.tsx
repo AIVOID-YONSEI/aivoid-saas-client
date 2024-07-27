@@ -8,15 +8,12 @@ export function IndexSectionNo1() {
       <Container sx={{ position: 'relative', zIndex: 1 }}>
         <Stack>
           <Typography color={'white'} fontSize={'24px'} lineHeight={'normal'} fontWeight={100} sx={{ opacity: 0.6 }}>
-            Artificial Intelligence VOIce Detector
-          </Typography>
-          <Typography color={'white'} fontSize={'24px'} lineHeight={'normal'} fontWeight={100} sx={{ opacity: 0.6 }}>
             지금, 당신의 목소리는 안전한가요?
           </Typography>
         </Stack>
         <Stack mt={5}>
           <Typography fontSize={'64px'} fontWeight={700} color={'white'} lineHeight={1.2}>
-            AI VOID.
+            True Voice.
           </Typography>
           <Typography fontSize={'64px'} fontWeight={700} color={'white'} lineHeight={1.2}>
             가장 신뢰할 수 있는 선택
